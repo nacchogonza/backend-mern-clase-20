@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "entregable-20",
+  "version": "1.0.0",
+  "description": "Entregable para la clase 20",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "Ignacio Martin Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "mongoose": "^5.12.12",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.0.1",
+    "ejs": "^3.1.6"
+  }
+}

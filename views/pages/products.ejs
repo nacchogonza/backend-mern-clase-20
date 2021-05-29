@@ -1,0 +1,26 @@
+<%- include('../partials/top') %>
+
+
+<div style="padding: 20px;">
+  <!-- <form action="/api/productos" method="post"> -->
+  <form onsubmit="return addProduct(this)">
+    <div class="form-group">
+      <label for="title" class="font-italic">Nombre del producto</label>
+      <input type="text" class="form-control" name="title" id="title" placeholder="Nombre del producto">
+    </div>
+    <div class="form-group">
+      <label for="price">Precio del Producto</label>
+      <input type="text" class="form-control" name="price" id="price" placeholder="Precio del producto">
+    </div>
+    <div class="form-group">
+      <label for="thumbnail">Icono del Producto</label>
+      <input type="text" class="form-control" name="thumbnail" id="thumbnail" placeholder="Icono del producto">
+    </div>
+    <input type="hidden" name="form" value="1" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <%- include('../partials/listProducts') %>
+  <%- include('../partials/chat') %>
+</div>
+
+<%- include('../partials/bottom') %>
